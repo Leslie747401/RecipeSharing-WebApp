@@ -7,9 +7,14 @@ import { signIn , signOut , useSession } from "next-auth/react"
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { useRouter } from "next/navigation";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const plusJakartaSansNormal = Plus_Jakarta_Sans({
     subsets : ['latin'],
     weight : '600'
+});
+
+const plusJakartaSansBold = Plus_Jakarta_Sans({
+    subsets : ['latin'],
+    weight : '800'
 });
 
 const ProfileNavbar = () => {
@@ -35,7 +40,7 @@ const ProfileNavbar = () => {
                 className="object-contain"
                 alt="profile"
             />
-            <div className={plusJakartaSans.className}>
+            <div className={plusJakartaSansBold.className}>
                 <p className="logo_text">Recipe<span className="text-[#3dd098]">Pedia</span></p>
             </div>
         </Link>
@@ -97,14 +102,14 @@ const ProfileNavbar = () => {
 
                             {
                                 ToggleDropdown && (
-                                    <div className="profile_dropdown">
+                                    <div className="profile_dropdown z-10">
 
                                         <Link href="/" className="dropdown_link" onClick={()=> setToggleDropdown(false)}>
-                                            Home
+                                            <p className={`${plusJakartaSansNormal.className} text-base`}>Home</p>
                                         </Link>
 
                                         <Link href="/Share-Recipe">
-                                             Share Recipe
+                                            <p className={`${plusJakartaSansNormal.className} text-base`}>Share&nbsp; Recipe</p>
                                         </Link>
 
                                         {/* After signing out , it will be redirected to the Home Pages */}
