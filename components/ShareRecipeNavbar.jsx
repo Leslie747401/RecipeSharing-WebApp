@@ -12,7 +12,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
     weight : '600'
 });
 
-const shareRecipeNavbar = () => {
+const ShareRecipeNavbar = () => {
 
   const [ToggleDropdown, setToggleDropdown] = useState(false); 
 
@@ -133,4 +133,4 @@ const shareRecipeNavbar = () => {
   )
 }
 
-export default shareRecipeNavbar;
+export default ShareRecipeNavbar;

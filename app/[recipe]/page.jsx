@@ -36,7 +36,7 @@ const SingleRecipe = ({params}) => {
 
     getRecipe();
 
-  },[]);
+  });
 
   return (
     <>

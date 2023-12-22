@@ -64,7 +64,7 @@ const Edit = ({params}) => {
 
     getRecipeToBeEdited();
 
-  },[]);
+  });
 
   console.log(image);
 
