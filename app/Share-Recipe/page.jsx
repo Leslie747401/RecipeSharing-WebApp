@@ -149,18 +149,18 @@ const RecipeData = () => {
                 {/* We have to wrie 'image' here again to check otherwise it will give a null error */}
                 {
                   image && 
-                  <Image 
-                    src={image}
-                    width={100}
-                    height={100}
-                    alt={imageName}
-                    className='object-contain'
+                  <div className='w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] relative'>
+                      <Image 
+                        src={image}
+                        fill
+                        alt={imageName}
+                        className='object-contain'
                   /> 
+                  </div>
                 }
       
               </div>
 
-              {/* pr-3 pl-3  */}
               <div className={`${plusJakartaSansNormal.className} bg-green-200 flex items-center justify-between rounded-lg w-full max-h-fit p-3 mb-10 sm:mb-14 sm:w-[1134px] sm:h-[45px]`}>
 
                 <div className='flex items-center'>
@@ -173,7 +173,7 @@ const RecipeData = () => {
                     className='mr-1.5'
                   />
 
-                  <p>{imageName}</p>
+                  <p className='max-sm:max-w-[275px] max-sm:break-words'>{imageName}</p>
 
                 </div>
 

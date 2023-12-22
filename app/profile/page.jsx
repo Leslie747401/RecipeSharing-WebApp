@@ -56,7 +56,7 @@ const Profile = () => {
 
         <h1 className={`${plusJakartaSansBold.className} text-[40px] mb-14 sm:text-[75px]`}>Your <span className='Home_green_gradient'>Recipes</span></h1>
     
-        <div className='flex flex-col gap-16 sm:flex sm:flex-row sm:gap-20 sm:flex-wrap sm:max-w-[1150px] sm:mb-20'>
+        <div className='flex flex-col gap-16 mb-16 sm:flex sm:flex-row sm:gap-20 sm:flex-wrap sm:max-w-[1150px] sm:mb-20'>
 
           {/* we need to add  ( userRecipes && ) to check whether it contains data and is not undefined */}
           {userRecipes && userRecipes.map((userRecipe) => (
