@@ -63,7 +63,7 @@ const Profile = () => {
 
             // <Link href={`/${userRecipe._id}`}> this indicates that when we click on this, we will be redirected the route(page) - '/id_of_the_recipe' where we can get hold of the id of recipe as we have passed it along which is (id_of_the_recipe)
             // and we can then use it to get all the details of that recipe.
-            <Link href={`/${userRecipe._id}`}>
+            <Link key={userRecipe._id} href={`/${userRecipe._id}`}>
                 <ProfileRecipeCard
                     key={userRecipe._id}
                     recipe_img={userRecipe.Recipe_Image}
