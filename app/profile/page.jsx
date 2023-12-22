@@ -2,7 +2,7 @@
 
 'use client'
 
-import Navbar from '@components/Navbar'
+import ProfileNavbar from '@components/ProfileNavbar';
 import axios from 'axios';
 import { useSession } from 'next-auth/react'
 import { Plus_Jakarta_Sans } from 'next/font/google'
@@ -52,7 +52,7 @@ const Profile = () => {
     
     <>
 
-      <Navbar/>
+        <ProfileNavbar/>
 
         <h1 className={`${plusJakartaSansBold.className} text-[40px] mb-14 sm:text-[75px]`}>Your <span className='Home_green_gradient'>Recipes</span></h1>
     

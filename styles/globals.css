@@ -161,6 +161,10 @@
   @apply absolute right-[6%] top-[5%] mt-3 w-[15%] p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-3.5 justify-end items-center;
 }
 
+.profile_dropdown{
+  @apply absolute right-[6%] top-[6.5%] mt-3 w-[15%] p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-3.5 justify-end items-center;
+}
+
 .dropdown_link {
   @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
 }
